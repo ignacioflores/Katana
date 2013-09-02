@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Framework </title>
+        <script type="text/javascript" src="katana.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            
+        </div>
+        <script type="text/javascript">
+//            (function(){
+//                $.obt('container').esc("hola gente");
+//            })();
+            (function(){
+                var h = $.crear("div", "header");
+                var w = $.crear("div", "wrapper");
+                var f = $.crear("div", "footer");
+                $.obt("container").metele(h);
+                $.obt("container").metele(w);
+                $.obt("container").metele(f);
+            })();
+        </script>
+    </body>
+</html>
